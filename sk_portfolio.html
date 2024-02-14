@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SKportfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/x-icon" href="/bootstrap3/sk-favicon.png">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: white;
+        }
+
+        .jumbotron-sub-ctn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .jumbotron-sub-ctn-logos a{
+            color: white;
+        }
+        .jumbotron-sub-ctn-logos a:hover {
+           color: rgb(101, 99, 99);
+        }
+
+        #Education-ctn{
+            padding: 80px 40px; 
+        }
+        .skills-ctn-cards:hover {
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+        .skills-ctn-cards img{
+            width:100px;
+        }        
+        .career-container{
+            background-color: antiquewhite;
+             padding: 80px 40px;
+        }
+       
+        .projects-card{
+                display: flex;
+                flex-wrap: wrap;
+                /* border: 1px rgb(86, 85, 85) solid;
+                border-radius: 5px; */
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                margin-bottom: 30px;
+                padding: 30px;
+                max-width: 400px;
+                }
+        
+        .projects-card:hover{
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        }
+        .contact-sub-container a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact-sub-container a:hover {
+            color: rgb(204, 157, 4);
+        }
+
+        .certification-col-conatiner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width:576px) {
+            .jumbotron-sub-ctn img {
+                margin-bottom: 18px;
+            }
+
+            .projects-card{
+            max-width: 100%;
+            }
+        }
+        
+        @media screen and (max-width:786px) {
+            .jumbotron-sub-ctn h2 {
+                font-size: 20px
+            }
+
+            .jumbotron-sub-ctn h5 {
+                font-size: 16px
+            }
+        }
+
+        @media screen and (min-width:786px) {
+            .jumbotron-sub-ctn-logos a{
+            font-size: 24px;
+        }
+        }
+
+    </style>
+
+</head>
+
+<body id="home">
+    <!-- nav-bar -->
+    <div class="navbar navbar-expand-lg bg-warning fixed-top" style="position:sticky;">
+        <div class="container-fluid">
+            <div><a class="navbar-brand" href="#home">SK.</a></div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center " id="collapse-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-1">
+                        <a href="#home" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a href="#Experience" class="nav-link">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a href="#Education-ctn" class="nav-link">EDUCATION</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a href="#skills-container" class="nav-link">SKILLS AND ABILITIES</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a href="#Projects-container" class="nav-link">PROJECTS</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a href="#Certifications-ctn" class="nav-link">CERTIFICATIONS</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a href="#contact" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a href="https://drive.google.com/file/d/1ChX2xdZ48GpocXLT8adAL7wItocGitrY/view?usp=sharing"
+                            target="_blank" class="nav-link">RESUME</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <a href="#"><h6 class="border rounded-pill p-2">Resume</h6></a> -->
+        </div>
+    </div>
+    <!--jumbotron  -->
+    <div class="container-fluid text-bg-dark py-4">
+        <div class="row row-cols-sm-2">
+            <div class="col-sm-6 jumbotron-sub-ctn">
+                <img src="/images/sk-photo.jpeg" class="img-fluid rounded-circle  ">
+            </div>
+            <div class="col-sm-6 jumbotron-sub-ctn">
+                <h2>Bakaagoni Sai Krishna Goud</h2>
+                <h5>Test Engineer | Web Developer</h5>
+                <div class="jumbotron-sub-ctn-logos d-flex gap-3 mt-1">
+                    <a href="https://github.com/saikrishnask15" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="mailto:198r1a0507@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/sai-krishna-goud-b5288a191" target="_blank"><i class="fa fa-linkedin" ></i></a>
+                    <a href="https://twitter.com/Saikrishna_sk_" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- career-objectives -->
+    <div class="container-fluid text-center career-container">
+        <h2 class="pb-3">Career Objectives</h2>
+        <h6> To work in a firm with a professional work-driven
+            environment where I can utilize and apply my
+            knowledge and skills which would enable me as a
+            fresh graduate to grow while fulfilling
+            organizational goals.</h6>
+    </div>
+
+    <!-- Experience-container -->
+    <div class="container-fluid my-5 p-5" id="Experience">
+        <div class="text-center">
+            <h1 class="p-3">Experience</h1>
+            <img src="/images/test.png" alt="test-image" class="mt-5 mb-3">
+            <h5>Test Engineer Intern</h5>
+            <h6>Taskbroz PTY LTD</h6>
+            <h6>Australia-Remote</h6>
+            <div>SEP-2022 to AUG-2023</div>
+            <div class="mt-1">Testing cross-platform mobile application and Taskbroz website. Preparing testcases,
+                Manual Testing, Functional Testing, documentation.</div>
+            <p>Technologies used: Jira, Jenkins, Confluences.</p>
+        </div>
+    </div>
+
+    <!--Education-container  -->
+    <div id="Education-ctn" class="container-fluid text-center my-5  text-bg-dark ">
+        <h1 class="mb-5 p-3">Education</h1>
+
+        <div class="d-lg-flex justify-content-center gap-3 ">
+            <div class="p-3 mt-2 text-bg-success rounded">
+                <h4>CMR ENGINEERING COLLEGE</h4>
+                <h6>Computer Science And Engineering</h6>
+                <p>2019-2023</p>
+            </div>
+            <div class="p-3 mt-2 text-bg-success rounded">
+                <h4>SRI CHAITANYA JUNIOR COLLEGE</h4>
+                <h6>Maths Physics And Science</h6>
+                <p>2017-2019</p>
+            </div>
+            <div class="p-3 mt-2 text-bg-success rounded">
+                <h4>INDO-BRITISH HIGH SCHOOL</h4>
+                <h6>SSC</h6>
+                <p>2016-2017</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills and abilities -->
+    <div class="container-fluid  p-5" id="skills-container">
+        <h1 class="mb-5 p-3 text-center">Skills and Abilities</h1>
+        <div class="row ">
+            <div class="col-sm border border-dark rounded m-2 p-4 skills-ctn-cards">
+                <img class="mb-3" src="/images/programming.png">
+                <h4>Programming Lanaguages</h4>
+                <h6>
+                    <li>C programming</li>
+                    <li>C++</li>
+                    <li>Core Java</li>
+                </h6>
+            </div>
+            <div class="col-sm border border-dark rounded m-2 p-4 skills-ctn-cards">
+                <img class="mb-3" src="/images/data.png" >
+                <h4>Web Development</h4>
+                <h6>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Bootstrap 5</li>
+                </h6>
+            </div>
+            <div class="col-sm border border-dark rounded m-2 p-4 skills-ctn-cards">
+                <img class="mb-3" src="/images/tools.png">
+                <h4>Tools</h4>
+                <h6>
+                    <li>Git</li>
+                    <li>VScode</li>
+                    <li>Jenkins</li>
+                    <li>Jira</li>
+                </h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm border border-dark rounded m-2 p-4 skills-ctn-cards">
+                <img class="mb-3" src="/images/database-storage.png">
+                <h4>Databases</h4>
+                <h6>
+                    <li>Mysql</li>
+                </h6>
+            </div>
+            <div class="col-sm border border-dark rounded m-2 p-4 skills-ctn-cards">
+                <img class="mb-3" src="/images/testing.png">
+                <h4>Testing</h4>
+                <h6>
+                    <li>Manual Testing</li>
+                    <li>Functional Testing</li>
+                    <li>Test cases</li>
+
+                </h6>
+            </div>
+            <div class="col-sm border border-dark rounded m-2 p-4 skills-ctn-cards">
+                <img class="mb-3" src="/images/skill-development.png" >
+                <h4>Abilities</h4>
+                <h6>
+                    <li>Collabrative Working</li>
+                    <li>Flexible Working</li>
+                    <li>communication</li>
+                    <li>Ability learn new technologies</li>
+                </h6>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Projects-container -->
+    <div class="container-fuild p-5" id="Projects-container">
+        <h1 class="text-center mb-5 p-3">Projects</h1>
+        <div class=" d-sm-flex gap-3 justify-content-center">
+          
+                <div class="projects-card">
+                    <h5>Suggesting proper crops using field types</h5>
+                    <p>An proper crop suggesting website using machine Learning.</p>
+                    <a href="#"><i class="fa fa-github" style="font-size:24px"></i>
+                    </a>
+                </div>
+        
+                <div class="projects-card">
+                    <h5>IOT based scanning entry system</h5>
+                    <p>An IOT-enabled smart door that for monitoring body temperature detection.</p>
+                    <a href="#"><i class="fa fa-github" style="font-size:24px"></i>
+                    </a>
+                </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- Certifications-container -->
+    <div class="container-fluid p-5" id="Certifications-ctn">
+        <h1 class="text-center m-5 p-3 ">Certifications</h1>
+        <div class="d-sm-flex justify-content-center gap-5">
+            <div class="certification-col-conatiner">
+                <img src="/images/sk_orcale_Certificate.jpg" class="img-thumbnail mb-3" width="350" height="236">
+                <a class="btn btn-warning" data-bs-toggle="modal"
+                    data-bs-target="#certification-1-Modal">Oracle-javaSE8</a>
+                <div class="modal" id="certification-1-Modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>Oracle-javaSE8</h5>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/images/sk_orcale_Certificate.jpg" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="certification-col-conatiner">
+                <img src="/images/c-for-everone.jpg" class="img-thumbnail mb-3" width="350" height="236">
+                <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#certification-2-Modal">Coursera-C for
+                    everyone</a>
+                <div class="modal" id="certification-2-Modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>Coursera-C for everyone</h5>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/images/c-for-everone.jpg" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="certification-col-conatiner">
+                <img src="/images/cpp-certificate.jpg" class="img-thumbnail mb-3" width="350" height="236">
+                <a class="btn btn-warning" data-bs-toggle="modal"
+                    data-bs-target="#certification-3-Modal">Spoken_tutorial-C++</a>
+                <div class="modal" id="certification-3-Modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>Spoken_tutorial-C++</h5>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/images/cpp-certificate.jpg" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- contact-container -->
+    <div class="container-fluid text-bg-dark p-5 pb-5" id="contact">
+        <h1 class="text-center mb-5 p-3 ">Contact</h1>
+
+        <div class="row row-cols-lg-4 row-cols-sm-2 pb-3">
+            <div class="col-lg-3 col-xl-3 pb-3 contact-sub-container">
+                <a href="tel:+910007357"><img src="/images/phone-icon.png">
+                    +91-0007357</a>
+            </div>
+            <div class="col-lg-4 col-xl-3 pb-3 contact-sub-container">
+                <a href="mailto:198r1a0507@gmail.com" target="_blank"><img src="/images/send_email_icon.png">
+                    198r1a0507@gmail.com</a>
+            </div>
+            <div class="col-lg-3 col-xl-3 pb-3 contact-sub-container">
+                <a href="https://www.linkedin.com/in/sai-krishna-goud-b5288a191" target="_blank"><img
+                        src="/images/inkedin_icon.png">
+                    linkedin</div></a>
+            <div class="col-lg-2 col-xl-3 pb-3 contact-sub-container">
+                <a href="https://github.com/saikrishnask15" target="_blank"><img src="/images/github_fill_icon.png">
+                    Github</a>
+            </div>
+        </div>
+        <!-- <i class="fa fa-github" style="font-size:48px;"></i> -->
+
+    </div>
+    <div class="bg-black text-light text-center p-2">&#169copyrights 2024 by sk.</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
