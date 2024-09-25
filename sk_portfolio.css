@@ -37,7 +37,11 @@ body {
     background-color: antiquewhite;
      padding: 80px 40px;
 }
-
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 10px;
+}
 .projects-card{
         display: flex;
         flex-wrap: wrap;
@@ -46,12 +50,19 @@ body {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         margin-bottom: 30px;
         padding: 30px;
-        max-width: 400px;
+        /* max-width: 400px; */
         }
 
 .projects-card:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
+}
+
+.contact-sub-container{
+    font-size: 16px;
+}
+.contact-sub-container img{
+    height: 24px;
 }
 .contact-sub-container a {
     text-decoration: none;
